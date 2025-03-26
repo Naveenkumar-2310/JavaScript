@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object and its method Task</title>
+</head>
+<body>
+    <script>
+        function calculator(firstNumber,secondNumber){
+            this.firstNumber = firstNumber,
+            this.secondNumber = secondNumber,
+            this.addition = function(){
+                console.log(`Addition : ${this.firstNumber + this.secondNumber}`);
+            }
+            this.substraction = function(){
+                console.log(`Substraction : ${this.firstNumber - this.secondNumber}`);
+            }
+        }
+        let number1 = new calculator(50,10)
+        number1.addition()
+        number1.substraction()
+    </script>
+</body>
+</html>

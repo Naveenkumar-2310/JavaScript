@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects Task-2</title>
+</head>
+<body>
+    <script>
+        let inputArrayOfObject = [
+            {
+                name : "Anu",
+                age : 20
+            },
+            {
+                name : "Banu",
+                age : 22
+            }
+        ];
+
+        let findName = inputArrayOfObject.find((element) => {
+            return element.name === "Anu" ;
+        }) 
+        if(findName){
+            console.log("Name is Present");
+        } else{
+            console.log("Name is not Present");
+        }
+        
+    </script>
+</body>
+</html>
