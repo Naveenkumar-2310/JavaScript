@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Methods Task-2</title>
+</head>
+<body>
+    <script>
+        class circle {
+            constructor (radius){
+                this.radius = radius
+            }
+            area(){
+                return Math.PI * (this.radius ** 2)
+            }
+            circumference(){
+                return (2 * Math.PI) * this.radius
+            }
+        }
+        const findobject = new circle(5)
+        console.log(findobject.area().toFixed(2));
+        console.log(findobject.circumference().toFixed(2));
+    </script>
+</body>
+</html>
